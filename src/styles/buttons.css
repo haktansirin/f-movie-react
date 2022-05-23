@@ -1,0 +1,18 @@
+.button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+    background-color: transparent;
+    padding: 10px 30px;
+    transition: var(--transition-base);
+}
+
+.button-primary:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}

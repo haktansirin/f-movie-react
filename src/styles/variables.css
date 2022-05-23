@@ -1,0 +1,18 @@
+:root {
+  --text-color: #474957;
+  --font-family: "Rubik", sans-serif;
+  --font-size: 16px;
+  --primary-color: #f54749;
+  --primary-shadow-color: 0 5px 20px rgba(245, 71, 73, 0.6);
+  --secondary-color: #474957;
+  --success-color: #2ecc71;
+  --warning-color: #f1c40f;
+  --error-color: #e74c3c;
+  --white-color: #fff;
+  --body-color: #edeef7;
+  --border-color: #f0f3fd;
+  --dark-color: #474957;
+  --radius-base: 10px;
+  --light-color: #edeef7;
+  --transition-base: 0.3s all;
+}

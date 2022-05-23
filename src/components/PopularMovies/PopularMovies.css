@@ -1,0 +1,77 @@
+.popular-movies {
+    margin-top: auto;
+}
+
+.popular-movie-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid transparent;
+    border-radius: var(--radius-base);
+    background-color: var(--white-color);
+    padding: 20px 60px 20px 20px;
+    transition: var(--transition-base);
+    overflow: hidden;
+}
+
+.popular-movie-card:hover {
+    border-color: var(--primary-color);
+}
+
+.popular-movie-card:hover .popular-movie-name {
+    color: var(--primary-color);
+}
+
+.popular-movie-image {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius: var(--radius-base);
+    background-color: var(--light-color);
+    overflow: hidden;
+}
+
+.popular-movie-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-movie-vote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--white-color);
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    z-index: 1;
+}
+
+.popular-movie-vote.high {
+    background-color: var(--success-color);
+}
+
+.popular-movie-vote.middle {
+    background-color: var(--warning-color);
+}
+
+.popular-movie-vote.low {
+    background-color: var(--error-color);
+}
+
+.popular-movie-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    font-size: 18px;
+    font-weight: 500;
+    transition: var(--transition-base);
+    overflow: hidden;
+}

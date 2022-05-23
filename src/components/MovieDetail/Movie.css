@@ -1,0 +1,141 @@
+.movie-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.movie-detail .section-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.movie-detail-image {
+  width: 100%;
+}
+
+.movie-detail-content {
+  width: 100%;
+}
+
+.movie-detail-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.movie-detail-descripton {
+  line-height: 25px;
+}
+
+.movie-cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.movie-cast-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.movie-cast-name {
+  font-weight: 500;
+  text-align: center;
+}
+
+.movie-detail-crew {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+
+.movie-detail-crew.hidden {
+  position: relative;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.movie-detail-crew.hidden::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, var(--body-color), transparent);
+}
+
+.movie-detail-crew-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.movie-detail-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+}
+
+.movie-detail-genres-item {
+  color: var(--white-color);
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100px;
+  background-color: var(--dark-color);
+  padding: 5px 15px;
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.movie-detail-genres-item:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.movie-detail-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin-top: 20px;
+}
+
+.movie-detail-info-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.movie-detail-info-icon {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+  .movie-detail-image {
+    position: sticky;
+    top: 30px;
+    width: 30%;
+    min-width: 30%;
+  }
+
+  .movie-detail-content {
+    width: calc(70% - 50px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .movie-detail {
+    flex-direction: column;
+  }
+
+  .movie-detail-crew {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

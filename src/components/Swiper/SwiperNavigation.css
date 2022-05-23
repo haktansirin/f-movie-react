@@ -1,0 +1,30 @@
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: var(--primary-shadow-color);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}

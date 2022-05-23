@@ -1,0 +1,19 @@
+.text-center {
+    text-align: center !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.radius-1 {
+    border-radius: var(--radius-base) !important;
+}
+
+.mx-auto {
+    margin: auto !important;
+}
+
+.mt-3 {
+    margin-top: 30px !important;
+}

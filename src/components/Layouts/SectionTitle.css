@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}

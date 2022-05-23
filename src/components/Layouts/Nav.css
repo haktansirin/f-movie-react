@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-link {
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.menu-link.active {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    gap: 25px;
+  }
+
+  .menu-link {
+    font-size: 18px;
+  }
+}

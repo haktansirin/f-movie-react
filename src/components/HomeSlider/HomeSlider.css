@@ -1,0 +1,11 @@
+.home-slider {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 130px);
+}
+
+@media (min-width: 1024px) {
+  .home-slider {
+    height: calc(100vh - 217.5px);
+  }
+}

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--body-color);
+}
+
+ul {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    border:  none;
+    background-color: var(--white-color);
+    padding: 12px 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+:is(input, textarea, select):focus {
+    outline: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+strong {
+    font-weight: 600;
+}
