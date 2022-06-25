@@ -17,11 +17,11 @@ const SearchResult = ({ movies, closeSearchResult }) => {
           <SearchResultCard key={movie.id} movie={movie} />
         ))}
       </div>
-      {movies.length === 0 ? (
+      {movies.length === 0 && (
         <AlertMessage>
           There are no movies that matched your query.
         </AlertMessage>
-      ) : null}
+      )}
     </div>
   );
 };

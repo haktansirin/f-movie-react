@@ -62,10 +62,8 @@ const MovieDetail = ({
       </div>
       <div className="movie-detail-content">
         <div className="movie-detail-title">{title}</div>
-        {overview ? (
-          <p className="movie-detail-descripton">{overview}</p>
-        ) : null}
-        {movieCast && movieCast.length !== 0 ? (
+        {overview && <p className="movie-detail-descripton">{overview}</p>}
+        {movieCast && movieCast.length !== 0 && (
           <>
             <SectionTitle>CAST</SectionTitle>
             <Swiper
@@ -106,8 +104,8 @@ const MovieDetail = ({
               ))}
             </Swiper>
           </>
-        ) : null}
-        {movieCrew && movieCrew.length !== 0 ? (
+        )}
+        {movieCrew && movieCrew.length !== 0 && (
           <>
             <SectionTitle>CREW</SectionTitle>
             <ul className={`movie-detail-crew ${isShowMore ? "" : "hidden"}`}>
@@ -126,8 +124,8 @@ const MovieDetail = ({
               {isShowMore ? "Show less" : "Show more"}
             </button>
           </>
-        ) : null}
-        {backdrops && backdrops.length !== 0 ? (
+        )}
+        {backdrops && backdrops.length !== 0 && (
           <>
             <SectionTitle>IMAGES</SectionTitle>
             <Swiper
@@ -165,8 +163,8 @@ const MovieDetail = ({
               ))}
             </Swiper>
           </>
-        ) : null}
-        {genres && genres.length !== 0 ? (
+        )}
+        {genres && genres.length !== 0 && (
           <>
             <SectionTitle>GENRES</SectionTitle>
             <ul className="movie-detail-genres">
@@ -177,7 +175,7 @@ const MovieDetail = ({
               ))}
             </ul>
           </>
-        ) : null}
+        )}
       </div>
     </div>
   );

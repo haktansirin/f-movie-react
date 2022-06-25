@@ -11,7 +11,7 @@ const PopularMovies = ({ movies }) => {
   return (
     <div className="popular-movies">
       <SectionTitle>What's Popular</SectionTitle>
-      {movies ? (
+      {movies && (
         <Swiper
           spaceBetween={30}
           modules={[Navigation]}
@@ -40,7 +40,7 @@ const PopularMovies = ({ movies }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      ) : null}
+      )}
     </div>
   );
 };

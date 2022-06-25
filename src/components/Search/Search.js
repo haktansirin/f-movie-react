@@ -75,12 +75,12 @@ const Search = () => {
           </li>
         ))}
       </ul>
-      {isShowResult ? (
+      {isShowResult && (
         <SearchResult
           movies={searchResults}
           closeSearchResult={closeSearchResult}
         />
-      ) : null}
+      )}
     </div>
   );
 };
